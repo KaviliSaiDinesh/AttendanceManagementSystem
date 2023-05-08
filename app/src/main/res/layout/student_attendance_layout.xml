@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <!-- This layout will be repeated for each student -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/student_regno"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Regno"
+                    android:layout_gravity="center"
+                    android:textColor="@color/lavender"
+                    />
+
+
+                <TextView
+                    android:id="@+id/student_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Student Name"
+                    android:layout_gravity="center"
+                    android:textColor="@color/lavender"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/attendance_radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/present_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Present"/>
+
+                    <RadioButton
+                        android:id="@+id/absent_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Absent"
+                        />
+                    <RadioButton
+                        android:id="@+id/od_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OD"/>
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:hint="Enter the Reason"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:textColor="@color/lavender"
+            android:textSize="20dp"
+            android:paddingLeft="20dp"
+            android:id="@+id/absentReasonedt"
+            />
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

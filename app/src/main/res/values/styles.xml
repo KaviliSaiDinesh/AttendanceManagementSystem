@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="android:statusBarColor">#000000</item>
+
+
+
+
+
+    </style>
+
+    <string-array name="years">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="sections">
+        <item>A</item>
+        <item>B</item>
+        <item>c</item>
+    </string-array>
+
+
+
+
+
+
+
+
+
+
+</resources>

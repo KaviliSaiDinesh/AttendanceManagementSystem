@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Register"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="26dp"
+            android:background="@color/lavender"
+            android:textColor="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/basicDetailsll"
+            android:layout_marginTop="50dp"
+            android:padding="25dp">
+
+            <EditText
+                android:id="@+id/reg_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:inputType="text"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:hint="Username"
+                android:textSize="20sp"
+                android:padding="8dp" />
+
+
+            <EditText
+                android:id="@+id/reg_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="08dp"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:hint="Email"
+                android:textSize="20sp"
+                android:padding="8dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reg_password"
+                android:background="@drawable/border"
+                android:layout_margin="20dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:hint="Password"
+                android:textSize="20dp"
+                android:inputType="textPassword"
+                android:textColorHint="@color/black"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_width="155dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/studentcheckbox"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/lavender"
+                    android:text="student"
+                    android:textStyle="bold"
+                    android:padding="2dp"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border"
+                    />
+                <CheckBox
+                    android:layout_width="155dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/teachercheckbox"
+                    android:textColorHint="@color/lavender"
+                    android:text="Teacher"
+                    android:textStyle="bold"
+                    android:padding="2dp"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/basicDetailsll">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="0dp"
+                android:visibility="gone"
+                android:id="@+id/Student_layout"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/classedt"
+                    android:background="@drawable/border"
+                    android:layout_margin="20dp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:hint="Year"
+                    android:textSize="20dp"
+                    android:inputType="text"
+                    android:textColorHint="@color/black"
+                    android:drawableLeft="@drawable/baseline_home_24"
+                    android:drawablePadding="8dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sectionedt"
+                    android:background="@drawable/border"
+                    android:layout_margin="20dp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:hint="Section"
+                    android:textSize="20dp"
+                    android:inputType="text"
+                    android:textColorHint="@color/black"
+                    android:drawableLeft="@drawable/baseline_abc_24"
+                    android:drawablePadding="8dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/RRegnoedt"
+                    android:background="@drawable/border"
+                    android:layout_margin="20dp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:hint="Register Number"
+                    android:textSize="20dp"
+                    android:inputType="text"
+                    android:textColorHint="@color/black"
+                    android:drawableLeft="@drawable/baseline_123_24"
+                    android:drawablePadding="8dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/RDepedt"
+                    android:background="@drawable/border"
+                    android:layout_margin="20dp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:hint="Department"
+                    android:textSize="20dp"
+                    android:inputType="text"
+                    android:textColorHint="@color/black"
+                    android:drawableLeft="@drawable/baseline_home_24"
+                    android:drawablePadding="8dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/teacher_layout"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Tclassedt"
+                    android:background="@drawable/border"
+                    android:layout_margin="20dp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:hint="Year"
+                    android:textSize="20dp"
+                    android:inputType="text"
+                    android:textColorHint="@color/black"
+                    android:drawableLeft="@drawable/baseline_home_24"
+                    android:drawablePadding="8dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/TIdedt"
+                    android:background="@drawable/border"
+                    android:layout_margin="20dp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:hint="Teacher Id"
+                    android:textSize="20dp"
+                    android:inputType="text"
+                    android:textColorHint="@color/black"
+                    android:drawableLeft="@drawable/baseline_123_24"
+                    android:drawablePadding="8dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/TDepedt"
+                    android:background="@drawable/border"
+                    android:layout_margin="20dp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:hint="Department"
+                    android:textSize="20dp"
+                    android:inputType="text"
+                    android:textColorHint="@color/black"
+                    android:drawableLeft="@drawable/baseline_home_24"
+                    android:drawablePadding="8dp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/regbuttons"
+            android:orientation="vertical"
+            android:layout_marginTop="700dp"
+            >
+
+
+
+        <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="register"
+                android:padding="10dp"
+                android:backgroundTint="@color/lavender"
+                android:textColorHint="@color/lavender"
+                android:id="@+id/registerbtn"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                app:cornerRadius = "30dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

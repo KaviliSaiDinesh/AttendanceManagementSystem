@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".ViewAttendanceS">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Attendance"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/lavender"
+        />
+
+    <TextView
+        android:id="@+id/date_editS_text"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Date"/>
+
+
+    <Button
+        android:id="@+id/Sview_attendance_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:backgroundTint="@color/lavender"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+
+        android:text="View"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Student Name:"
+            android:paddingLeft="10dp"
+            android:padding="10dp"
+            android:id="@+id/StudentNametv"
+            android:textColor="@color/lavender"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/Statustv"
+            android:padding="10dp"
+            android:text="Status"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/SReasonll"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reason:"
+            android:paddingLeft="10dp"
+            android:padding="10dp"
+            android:id="@+id/Reasontv"
+            android:textColor="@color/lavender"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/Reasonshowtv"
+            android:padding="10dp"
+            android:text="Status"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

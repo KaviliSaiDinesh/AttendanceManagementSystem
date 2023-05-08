@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".TakeAttedance">
+
+    <TextView
+        android:id="@+id/attendance_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take Attendance"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/lavender"
+        android:padding="5dp"
+        android:textSize="24sp"
+        android:gravity="center"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/atinputll">
+
+            <Spinner
+                android:id="@+id/Tdepspinner"
+                android:layout_width="0dp"
+                android:layout_height="47dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/lavender"
+                />
+
+            <Spinner
+                android:id="@+id/Tclassspinner"
+                android:layout_width="0dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/lavender"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewstudentsbtn"
+            android:layout_below="@id/atinputll"
+            android:text="View Students"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/student_attendance_layout"
+            >
+
+            <!-- This layout will be repeated for each student -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+<!--                <TextView-->
+<!--                    android:id="@+id/student_name"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Student Name"-->
+<!--                    android:textColor="@color/lavender"-->
+<!--                    />-->
+
+<!--                <RadioGroup-->
+<!--                    android:id="@+id/attendance_radio_group"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <RadioButton-->
+<!--                        android:id="@+id/present_radio_button"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Present"/>-->
+
+<!--                    <RadioButton-->
+<!--                        android:id="@+id/absent_radio_button"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Absent"/>-->
+
+<!--                </RadioGroup>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit_attendance_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:padding="10dp"
+        android:backgroundTint="@color/lavender"
+        android:textColorHint="@color/lavender"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_register"
+            android:icon="@drawable/registericon1"
+            android:title="Register" />
+        <item
+            android:id="@+id/nav_sendNotification"
+            android:icon="@drawable/baseline_notifications_none_24"
+            android:title="Send Notification" />
+        <item
+            android:id="@+id/nav_database"
+            android:icon="@drawable/databaselogo"
+            android:title="Database" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logoutimg"
+            android:title="Logout" />
+    </group>
+
+
+
+
+
+    <item android:title="Communicate">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/baseline_share_24"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/nav_aboutus"
+                    android:icon="@drawable/about_us2"
+                    android:title="About Us" />
+
+            </group>
+
+        </menu>
+    </item>
+
+</menu>

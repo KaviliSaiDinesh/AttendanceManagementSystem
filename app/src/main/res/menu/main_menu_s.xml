@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_s"
+            android:icon="@drawable/baseline_home_24"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_bus"
+            android:icon="@drawable/depinfo"
+            android:title="Department Info" />
+        <item
+            android:id="@+id/nav_viewattendanceS"
+            android:icon="@drawable/viewattendance1"
+            android:title="View Attendance" />
+        <item
+            android:id="@+id/nav_depinfo_s"
+            android:icon="@drawable/depinfo"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_profile_s"
+            android:icon="@drawable/baseline_person_24"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_logout_s"
+            android:icon="@drawable/logoutimg"
+            android:title="Logout" />
+    </group>
+
+
+
+
+
+    <item android:title="Communicate">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_shareS"
+                    android:icon="@drawable/baseline_share_24"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/nav_aboutusS"
+                    android:icon="@drawable/about_us2"
+                    android:title="About Us" />
+
+            </group>
+
+        </menu>
+    </item>
+
+</menu>
